@@ -67,3 +67,50 @@ for(let i = 0; i < roll.length; i++){
         img[i].classList.add('disable')
     })
 }
+
+let emoji = document.querySelectorAll('.emoji');
+
+document.querySelector(".show-hi").addEventListener('mouseover', () => {
+    document.querySelector(".hi").classList.add('hide-hi')
+    emoji[0].classList.add('emoji-hide')
+    emoji[2].classList.remove('emoji-hide');
+})
+
+document.querySelector(".show-hi").addEventListener('mouseout', () => {
+    document.querySelector(".hi").classList.remove('hide-hi')
+    emoji[0].classList.remove('emoji-hide')
+    emoji[2].classList.add('emoji-hide');
+})
+
+
+
+document.querySelector(".to-works").addEventListener('mouseover', () => {
+    document.querySelector(".smile").textContent = 'D'
+})
+
+document.querySelector(".to-works").addEventListener('mouseout', () => {
+    document.querySelector(".smile").textContent = ')'
+})
+
+document.querySelector(".love").addEventListener('mouseover', () => {
+    emoji[0].classList.add('emoji-hide');
+    emoji[1].classList.remove('emoji-hide');
+})
+
+document.querySelector(".love").addEventListener('mouseout', () => {
+    emoji[0].classList.remove('emoji-hide');
+    emoji[1].classList.add('emoji-hide');
+})
+
+const works = document.querySelectorAll('.bg-project');
+const projects = document.querySelectorAll('.project');
+
+for(let i = 0; i < works.length; i++){
+    works[i].addEventListener('mouseover', () =>{
+        projects[i].classList.add('show-work')
+    })
+
+    works[i].addEventListener('mouseout', () =>{
+        projects[i].classList.remove('show-work')
+    })
+}
