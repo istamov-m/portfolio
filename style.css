@@ -413,7 +413,7 @@ section p{
     transform: translateX(10px);
 }
 
-#works{
+#works, #services{
     flex-direction: column;
 }
 
@@ -460,6 +460,12 @@ section p{
     /* background-attachment: fixed; */
 }
 
+.bg-project:nth-of-type(4){
+    background-image: url('images/calc-on-react.png');
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+}
+
 .project{
     display: flex;
     flex-direction: column;
@@ -498,6 +504,59 @@ section p{
 
 .project h2{
     font-family: AudioWide;
+}
+
+
+.bg-project:nth-of-type(2){
+    transition-delay: 100ms;
+}
+
+.bg-project:nth-of-type(3){
+    transition-delay: 200ms;
+}
+
+.bg-project:nth-of-type(4){
+    transition-delay: 300ms;
+}
+
+.services{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    width: 100%;
+}
+
+.service{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 3px solid white;
+    background: blue;
+    width: 19em;
+    height: 30em;
+    transition: 0.1s all;
+    /* background: green; */
+}
+
+.service-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service p{
+    font-size: 15px;
+}
+
+.service:hover{
+    background: green;
+    width: 30em;
+}
+
+.hide-service{
+    display: none;
+    /* position: fixed; */
 }
 
 

@@ -113,4 +113,27 @@ for(let i = 0; i < works.length; i++){
     works[i].addEventListener('mouseout', () =>{
         projects[i].classList.remove('show-work')
     })
-}
+}w
+
+const services = document.querySelectorAll('.service');
+
+
+
+// function hideOthers(activeIndex) {
+//   services.forEach((el, i) => {
+//     if (i !== activeIndex) el.classList.add('hide-service');
+//   });
+// }
+
+// function showAll() {
+//   services.forEach(el => el.classList.remove('hide-service'));
+// }
+
+// services.forEach((service, index) => {
+//   service.addEventListener('mouseover', () => hideOthers(index));
+//   service.addEventListener('mouseout', showAll);
+// });
+
+// function check(){
+//     alert(2)
+// }
