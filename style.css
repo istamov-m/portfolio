@@ -68,15 +68,16 @@ body{
 header{
     display: flex;
     flex-direction: row;
-    justify-content:center;
+    justify-content: center;
+    /* border: 1px solid white; */
     align-items: center;
     height: 5em;
-    width: 100%;
+    /* width: 100%; */
 }
 
 .logo{
-    left: 50px;
     position: absolute;
+    left: 50px;
     width: 70px;
     filter: drop-shadow(0 0 15px rgb(247, 0, 255));
     animation: logo 0.8s ease-in-out alternate infinite;
@@ -86,16 +87,16 @@ header{
     to{filter: drop-shadow(0 0 15px rgb(255, 0, 179));}
 }
 
-header img{
+/* header img{
     justify-self: flex-start;
-}
+} */
 
 nav{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     justify-self: center;
-    align-self: center;
+    /* align-self: center; */
     align-items: center;
     border-bottom: 2px solid transparent;
     border-image: linear-gradient(90deg,rgba(83, 88, 237, 20%) 0%,rgba(83, 88, 237, 70%) 25%, rgba(197, 87, 199, 100%) 50%,rgba(83, 88, 237, 70%) 75%, rgba(83, 88, 237, 20%) 100%);
@@ -105,7 +106,7 @@ nav{
     padding: 0 40px;
     font-size: 20px;
     animation: wave 1s ease-in-out alternate 0.4s infinite;
-    transition: 0.3s all;
+    /* transition: 0.3s all; */
 }
 
 
@@ -114,7 +115,7 @@ nav a {
     flex-direction: row;
     justify-content: center;
     font-family: 'AudioWide';
-    color: white;
+    /* color: white; */
     text-shadow: 0 0 3px white;
     align-items: center;
     height: 2.5em;
@@ -150,11 +151,11 @@ nav a:hover{
     animation-play-state: running;
 }
 
-nav span{
+/* nav span{
     background: black;
     height: 0px;
     width: 3px;
-}
+} */
 
 .links{
     position: absolute;
@@ -164,17 +165,17 @@ nav span{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-right: em;
+    /* margin-right: em; */
     /* border: 1px solid white; */
     width: 200px;
-    justify-self: end;
+    /* justify-self: end; */
 }
 
 .links div:first-child{
     /* position: absolute; */
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     height: 240px;
     /* border: 1px solid white; */
 }
@@ -188,7 +189,7 @@ nav span{
     font-size: 20px;
     width: 10em;
     /* border: 1px solid white; */
-    color: white;
+    /* color: white; */
     transition: 0.3s all;
     transform: translateX(-50px);
 }
@@ -197,7 +198,7 @@ nav span{
     /* border: 1px solid white; */
     transition: 0.3s all;
     width: 140px;
-    text-align: start;
+    /* text-align: start; */
 }
 
 .move-on{
@@ -210,7 +211,7 @@ nav span{
     height: 30px;
     margin: 0 10px;
     transition: 0.3s all;
-    cursor: pointer;
+    /* cursor: pointer; */
     filter: drop-shadow(0 0 10px rgb(255, 0, 255));
 }
 
@@ -220,11 +221,11 @@ nav span{
     animation: hovermove 0.6s ease-in-out alternate infinite;
     z-index: -1;
     /* left: -90px; */
-    border-bottom: 1px sol;
+    /* border-bottom: 1px sol; */
 }
 
 .disable{
-    position: sticky;
+    /* position: sticky; */
     z-index: -1;
     opacity: 0;
 }
@@ -553,11 +554,20 @@ section p{
     width: 19em;
     height: 30em;
     transition: 0.2s all;
+    animation: service-stutter 1s ease-in-out alternate infinite;
     /* background: green; */
+}
+
+@keyframes service-stutter{
+    to{
+        border: 3px solid rgb(247, 0, 255);
+        box-shadow: 0 0 20px rgb(247, 0, 255);
+    }
 }
 
 .service:first-child{
     background: rgb(172, 0, 172);
+    animation-delay: 1000ms;
 }
 
 .service:nth-of-type(2){
@@ -566,6 +576,7 @@ section p{
 
 .service:nth-of-type(3){
     background: rgb(121, 0, 121);
+    animation-delay: 1000ms;
 }
 
 .service:last-of-type{
@@ -669,22 +680,27 @@ section p{
 
 .demonstration-anim{
     background-image: url("images/emoji-regular.png");
-    animation: demonstration 1.5s ease-in-out alternate infinite;
+    animation: demonstration 2s ease-in-out alternate infinite;
     background-position: center;
 }
 
 @keyframes demonstration {
-    33%{
+    25%{
         background-image: url("images/emoji-hello.png");
     }
 
-    66%{
+    50%{
         background-image: url("images/emoji-love.png");
     }
 
-    99%{
+    75%{
         background-image: url("images/emoji-regular.png");
     }
+
+    100%{
+        background-image: url("images/emoji-cute.png");
+    }
+
 
 }
 
@@ -750,29 +766,29 @@ section p{
 
 .contacts div {
     align-self: self-start;
-    margin-left: 40px;
+    margin-left: 10px;
     text-shadow: 0 0 10px rgb(255, 255, 255);
 }
 
 .contact{
     display: flex;
     flex-direction: row;
-    /* justify-content: space-around; */
+    justify-content: space-around;
     align-items: center;
     font-family: Press start;
     font-size: 30px;
-    margin-bottom: 10px;
-    /* padding: 10px; */
+    margin-bottom: 30px;
     width: 27em;
-    /* height: 2.5em; */
-    /* background: rgb(255, 0, 234); */
-    /* clip-path: polygon(20px 0, 100% 0, 100% 100%, 0 100%, 0 20px); */
-    /* border: 4px solid white; */
     transition: 0.3s all;
 }
 
 .contact p {
-    font-size: 30px;
+    font-size: 25px;
+}
+
+.contact a{
+    /* border: 1px solid white; */
+    width: 20em;
 }
 
 .redirect {
@@ -799,6 +815,15 @@ section p{
     transition-delay: 500ms;
 }
 
+.contact div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 13em;
+}
+
+
 
 .contact img{
     width: 40px;
@@ -807,12 +832,12 @@ section p{
 }
 
 .go{
-    transform: translateX(-50px);
+    transform: translateX(-90px);
     transition: 0.3s all;
 }
 
 .go-to{
-    transform: translateX(-20px);
+    transform: translateX(-70px);
 }
 
 
@@ -842,4 +867,242 @@ section p{
     opacity: 1;
     filter: blur(0);
     transform: translateX(0);
+}
+
+@media (max-width: 896px) {
+    header {
+        flex-direction: column-reverse;
+        justify-content:space-between;
+        /* border: 1px solid white; */
+        height: 11em;
+    }
+
+    nav{
+    font-size: 10px;
+}
+
+    .logo{
+        position: inherit;
+        width: 120px;
+    }
+
+    .links{
+        display: none;
+    }
+
+
+    .emoji{
+        display: none;
+    }
+
+    main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 25em;
+    /* border: 1px solid white; */
+    }
+
+    .sections{
+    /* border: 1px solid white;  */
+    width: 26em;
+    height: 80vh;
+}
+
+
+    section{
+    flex-direction: column;
+    /* border: 1px solid white; */
+}
+
+#main{
+    justify-content: center;
+}
+
+    #main div{
+        width: 24em;
+        height: 20em;
+    }
+
+    #main div:first-child{
+        height: 10em;
+    }
+
+    #main div:first-child h1{
+    transform: translateY(-0.2em);
+    animation: hovermove 1s ease-in-out alternate infinite;
+    font-size: 60px;
+}
+
+#main .intro{
+    align-items: center;
+}
+
+.hi{
+    display: none;
+}
+
+.intro h1{
+    font-size: 30px;
+    /* border-right: 5px solid white; */
+    /* border: 1px solid white; */
+}
+
+/* @keyframes cursor {
+    50% {
+        border-color: transparent;
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+} */
+
+.intro h5{
+    margin: 0;
+}
+
+.intro p {
+    font-size: 18px;
+    margin: 0;
+    font-weight: bold;
+    color: rgb(214, 220, 253);
+    transition-delay: 400ms;
+}
+
+.to-works{
+    width: 15em;
+    height: 5em;
+    font-size: 23px;
+}
+
+/* works */
+
+#works{
+    width: 26em;
+    height: 75em;
+    justify-content: center;
+}
+
+.projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 24em;
+    /* border: 3px solid white; */
+}
+
+.bg-project, .project{
+    width: 20em;
+    height: 15em;
+}
+
+/* services */
+
+#services{
+    height: 160em;
+}
+
+.services{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.service{
+    width: 20em;
+    height: 35em;
+    margin-bottom: 50px;
+}
+
+/* contacts */
+
+#contacts{
+    width: 25em;
+}
+
+.contacts{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    height: 40em;
+    width: 24em;
+}
+
+.contacts h1{
+    font-family: Press start;
+    color: rgb(0, 162, 255);
+    text-shadow: 0 0 15px rgb(0, 174, 255) ;
+    font-size: 24px;
+    margin-bottom: 30px;
+    animation: stuttering 1s ease-in-out alternate infinite;
+}
+
+.contacts div {
+    /* align-self: center; */
+    margin-left: 0;
+    text-shadow: 0 0 10px rgb(255, 255, 255);
+}
+
+.contact{
+    display: flex;
+    /* flex-direction: column; */
+    align-self: s;
+    /* justify-content: space-between; */
+    align-items: center;
+    font-family: Press start;
+    font-size: 16px;
+    margin-bottom: 60px;
+    /* border: 1px solid white; */
+    width: 22em;
+}
+
+.contact:first-child{
+    flex-direction: column;
+}
+
+.contact div{
+    align-self: flex-start;
+    margin-left: 10px;
+    /* border: 1px solid white; */
+}
+
+.contact p {
+    font-size: 15px;
+}
+
+.mail {
+    font-size: 1px;
+    /* transform: translateX(-80px); */
+}
+
+
+.contact a{
+    /* width: 40em; */
+}
+
+.redirect {
+    /* border: 1px solid white; */
+    width: 20em;
+}
+
+.go{
+    display: none;
+}
+
+.contact img{
+    width: 30px;
+    margin-right: 15px;
+}
+
+#main, #works, #services, #contacts{
+        width: 21em;
+    }
+
 }
