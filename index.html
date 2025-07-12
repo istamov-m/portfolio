@@ -9,6 +9,14 @@
 </head>
 <body>
 
+    <!-- 
+    Fix header - +
+    Fix contacts in header - +
+    Fix emoji - +
+    fix services - -
+    fix logo - -
+    -->
+
     <video autoplay muted loop id="bg-video">
         <source src="images/main-bg-vid.mp4" type="video/mp4">
     </video>
@@ -23,33 +31,39 @@
         </nav>
 
         <div class="links">
-            <div>
-                <img src="images/instagram-icon.png" alt="" class="show disable">
-                <img src="images/telegram-icon.png" alt="" class="show disable">
+            <!-- <div>
+                <img src="images/instagram.png" alt="" class="show disable">
+                <img src="images/telegram.png" alt="" class="show disable">
                 <img src="images/discord-icon.png" alt="" class="show disable">
                 <img src="images/discord-icon.png" alt="" class="show disable">
-            </div>
+            </div> -->
             <div>
                 <a href="#" class="roll">
-                    <p>instagram</p>
+                    <img src="images/instagram.png" alt="" class="show disable">
+                    <p class="move-off">instagram</p>
                 </a>
                 <a href="" class="roll">
-                    <p>telegram</p>
+                    <img src="images/telegram.png" alt="" class="show disable">
+                    <p class="move-off">telegram</p>
                 </a>
                 <a href="" class="roll">
-                    <p>discord</p>
+                    <img src="images/discord.png" alt="" class="show disable">
+                    <p class="move-off">discord</p>
                 </a>
                 <a href="" class="roll">
-                    <p>Github</p>
+                    <img src="images/github.png" alt="" class="show disable">
+                    <p class="move-off">Github</p>
                 </a>
             </div>
         </div>
     </header>
     
     <main>
-        <img class="emoji" src="images/emoji-regular.png" alt="emoji">
         <img class="emoji emoji-hide" src="images/emoji-love.png" alt="emoji">
         <img class="emoji emoji-hide" src="images/emoji-hello.png" alt="emoji">
+        <img class="emoji emoji-hide" src="images/emoji-cute.png" alt="emoji">
+        <img class="emoji" src="images/emoji-regular.png" alt="emoji">
+
         <div class="sections">         
             <section id="main">
                 <div>
@@ -105,7 +119,7 @@
 
                     <div class="hidden service"> <!-- анимация строения -->
                         <div class="service-content">
-                            <h1>Built from Scratch or <br> Based on Your Design</h1>
+                            <h1>Built from Scratch or <br> Based on Your Design <br> ____________-------</h1>
                             <p>Whether you have a full design or just a wild idea in your head — I’ll 
                                 turn it into a working website, coded by hand and tailored to your style.</p>
                         </div>
@@ -120,7 +134,7 @@
                     </div>
                     <div class="hidden service">
                         <div class="service-content">
-                            <h1>Animations</h1> <!-- демонстрация анимация -->
+                            <h1>Animations <br> ____________-------</h1> <!-- демонстрация анимация -->
                             <p>Hover effects, subtle transitions, scroll reveals — I add clean, 
                                 modern motion to your site that brings the interface to life without overdoing it.</p>
                         </div>
@@ -128,7 +142,7 @@
                     </div>
                     <div class="hidden service"> <!-- анимация где меняется размер -->
                         <div class="service-content">
-                            <h1>Fully Responsive website</h1>
+                            <h1>Fully Responsive website <br> ____________-------</h1>
                             <p>Your site will look and work great on phones, tablets, laptops, 
                                 and everything in between. I build mobile-first to keep things sharp and accessible.</p>
                         </div>
@@ -138,7 +152,7 @@
                     </div>
                     <div class="hidden service"> <!-- анимация сети -->
                         <div class="service-content">
-                            <h1>Publish online</h1>
+                            <h1>Publish online <br> ____________-------</h1>
                             <p>Once your site is done, I’ll help you publish it using GitHub Pages. 
                                 No confusing setup — just a clean link you can share with the world.</p>
                         </div>
@@ -150,13 +164,43 @@
             </section>
             <section id="contacts">
                 <div class="contacts">
-                    <h1>- My contacts -</h1>
+                    <h1 class="hidden">- My contacts -</h1>
                     <div>
-                        <p>Email: muboriz0809@gmail.com</p>
-                        <p>Telegram: <a href="https://t.me/mubachad" target="_blank">@mubachad</a></p>
-                        <p>Instagram: <a href="https://www.instagram.com/m_rizz__/" target="_blank">@mubachad</a></p>
-                        <p>Whatsapp: <a href="https://wa.me/008557997" target="_blank">@mubachad</a></p>
+                        <div class="hidden contact">
+                            <img src="images/email.png" alt="">
+                            <p>Email:</p>
+                            <p>muboriz0809@gmail.com</p>
+                        </div>
+                        <div class="contact hidden">
+                            <img src="images/telegram.png" alt="">
+                            <p>Telegram:</p>
+                            <a class="redirect" href="https://t.me/mubachad" target="_blank">click me</a>
+                            <span class="go">:)</span>
+                        </div>
+                        <div class="contact hidden">
+                            <img src="images/instagram.png" alt="">
+                            <p>Instagram:</p>
+                            <a class="redirect" href="https://t.me/mubachad" target="_blank">click me</a>
+                            <span class="go">:)</span>
+                        </div>
+                        <div class="contact hidden">
+                            <img src="images/whatsapp.png" alt="">
+                            <p>Whatsapp:</p>
+                            <a class="redirect" href="https://t.me/mubachad" target="_blank">click me</a>
+                            <span class="go">:)</span>
+                        </div>
+                        <div class="contact hidden">
+                            <img src="images/wechat.png" alt="">
+                            <p>Wechat:</p>
+                            <a class="redirect" href="https://t.me/mubachad" target="_blank">click me</a>
+                            <span class="go">:)</span>
+                        </div>
+                        <!-- <p><img src="images/telegram (1).png" alt=""> Telegram: <a class="contact" href="https://t.me/mubachad" target="_blank">click me<span class="go">:)</span></a></p>
+                        <p><img src="images/instagram (2).png" alt=""> Instagram: <a class="contact" href="https://www.instagram.com/m_rizz__/" target="_blank">click me</a> <span class="go">:)</span></p>
+                        <p><img src="images/whatsapp (1).png" alt=""> Whatsapp: <a class="contact" href="https://wa.me/008557997" target="_blank">click me</a> <span class="go">:)</span></p>
+                        <p><img src="images/wechat (1).png" alt=""> Wechat: <a class="contact" href="https://wa.me/008557997" target="_blank">click me</a> <span class="go">:)</span></p> -->
                     </div>
+                    <!-- <h1>- My contacts -</h1> -->
                 </div>
             </section>
             

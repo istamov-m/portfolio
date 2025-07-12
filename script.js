@@ -53,33 +53,60 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 
-
-
 const hiddenElement = document.querySelectorAll('.hidden');
 hiddenElement.forEach((el) => observer.observe(el));
 
-for(let i = 0; i < roll.length; i++){
-    roll[i].addEventListener('mouseover', () => {
+const move = document.querySelectorAll('.move-off');
+
+roll.forEach((element, i) => {
+    element.addEventListener('mouseover', () => {
         img[i].classList.remove('disable')
+        move[i].classList.add('move-on')
     })
 
-    roll[i].addEventListener('mouseout', () => {
+    element.addEventListener('mouseout', () => {
         img[i].classList.add('disable')
+        move[i].classList.remove('move-on')
     })
-}
+});
+
+// for(let i = 0; i < roll.length; i++){
+//     roll[i].addEventListener('mouseover', () => {
+//         img[i].classList.remove('disable')
+//     })
+
+//     roll[i].addEventListener('mouseout', () => {
+//         img[i].classList.add('disable')
+//     })
+// }
+
+
+move.forEach(element => {
+    
+});
 
 let emoji = document.querySelectorAll('.emoji');
 
+emoji[3].addEventListener('mouseover', () => {
+    emoji[3].classList.add('emoji-hide')
+    emoji[2].classList.remove('emoji-hide')
+})
+
+emoji[3].addEventListener('mouseout', () => {
+    emoji[3].classList.remove('emoji-hide')
+    emoji[2].classList.add('emoji-hide')
+})
+
 document.querySelector(".show-hi").addEventListener('mouseover', () => {
     document.querySelector(".hi").classList.add('hide-hi')
-    emoji[0].classList.add('emoji-hide')
-    emoji[2].classList.remove('emoji-hide');
+    emoji[3].classList.add('emoji-hide')
+    emoji[1].classList.remove('emoji-hide');
 })
 
 document.querySelector(".show-hi").addEventListener('mouseout', () => {
     document.querySelector(".hi").classList.remove('hide-hi')
-    emoji[0].classList.remove('emoji-hide')
-    emoji[2].classList.add('emoji-hide');
+    emoji[3].classList.remove('emoji-hide')
+    emoji[1].classList.add('emoji-hide');
 })
 
 
@@ -93,13 +120,13 @@ document.querySelector(".to-works").addEventListener('mouseout', () => {
 })
 
 document.querySelector(".love").addEventListener('mouseover', () => {
-    emoji[0].classList.add('emoji-hide');
-    emoji[1].classList.remove('emoji-hide');
+    emoji[3].classList.add('emoji-hide');
+    emoji[0].classList.remove('emoji-hide');
 })
 
 document.querySelector(".love").addEventListener('mouseout', () => {
-    emoji[0].classList.remove('emoji-hide');
-    emoji[1].classList.add('emoji-hide');
+    emoji[3].classList.remove('emoji-hide');
+    emoji[0].classList.add('emoji-hide');
 })
 
 const works = document.querySelectorAll('.bg-project');
@@ -113,9 +140,22 @@ for(let i = 0; i < works.length; i++){
     works[i].addEventListener('mouseout', () =>{
         projects[i].classList.remove('show-work')
     })
-}w
+}
 
-const services = document.querySelectorAll('.service');
+const contacts = document.querySelectorAll('.redirect');
+const goTo = document.querySelectorAll('.go');
+
+contacts.forEach((contact, i) => {
+    contact.addEventListener('mouseover', () => {
+        goTo[i].classList.add('go-to')
+        goTo[i].textContent = ":D"
+    })
+
+    contact.addEventListener('mouseout', () => {
+        goTo[i].classList.remove('go-to')
+        goTo[i].textContent = ":)"
+    })
+});
 
 
 
