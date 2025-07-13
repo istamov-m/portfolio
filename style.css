@@ -434,15 +434,23 @@ section p{
     flex-direction: column;
 }
 
+#works{
+    width: 100vh;
+}
+
 .projects{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(25em, 1fr));
+    /* grid-template-rows: repeat(2, 1fr); */
+    justify-content: center;
+    justify-items: center;
     gap: 40px;
+    border: 1px solid white;
+    width: 25em;
 }
 
 .bg-project, .project{
-    width: 30em;
+    /* width: 30em; */
     height: 17em;
     border-radius: 0 50px 0 50px;
     transition: 0.3s all;
@@ -901,13 +909,13 @@ section p{
     justify-content: center;
     align-items: center;
     height: 80vh;
-    width: 25em;
-    /* border: 1px solid white; */
+    width: 100%;
+    border: 1px solid white;
     }
 
     .sections{
     /* border: 1px solid white;  */
-    width: 26em;
+    /* width: 100%; */
     height: 80vh;
 }
 
@@ -983,17 +991,15 @@ section p{
 /* works */
 
 #works{
-    width: 26em;
+    width: 100%;
     height: 75em;
-    justify-content: center;
+    /* justify-content: center; */
 }
 
 .projects{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 24em;
+    display: grid;
+    width: 100%;
+    /* justify-content: center; */
     /* border: 3px solid white; */
 }
 
@@ -1088,7 +1094,6 @@ section p{
 }
 
 .redirect {
-    /* border: 1px solid white; */
     width: 20em;
 }
 
@@ -1102,7 +1107,10 @@ section p{
 }
 
 #main, #works, #services, #contacts{
-        width: 21em;
-    }
+    /* width: 20em;/ */
+    border: 1px solid white;
+    padding: 0;
+    width: 100%;
+}
 
 }
