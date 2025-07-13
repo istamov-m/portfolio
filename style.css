@@ -233,10 +233,12 @@ nav a:hover{
 /* Main */
 
 main {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
+    display: grid;
+    grid-template-columns: 1fr;
     height: 80vh;
     width: 75%;
     /* border: 1px solid white; */
@@ -283,10 +285,11 @@ main {
 .sections{
     display: grid;
     place-items: center;
+    grid-template-columns: 1fr;
     align-items: center;
-    flex-direction: column;
+    /* flex-direction: column; */
     justify-content: center;
-    /* border: 1px solid white;  */
+    border: 1px solid white; 
     height: 80vh;
     overflow: scroll;
 }
@@ -437,27 +440,27 @@ section p{
 #works{
     width: 100vh;
 }
-
+/*  */
 .projects{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25em, 1fr));
     /* grid-template-rows: repeat(2, 1fr); */
     justify-content: center;
-    justify-items: center;
+    /* justify-items: center; */
     gap: 40px;
     border: 1px solid white;
-    width: 25em;
+    width: 70em;
 }
 
 .bg-project, .project{
     /* width: 30em; */
     height: 17em;
-    border-radius: 0 50px 0 50px;
+    /* border-radius: 0 50px 0 50px; */
     transition: 0.3s all;
 }
 
 .bg-project{
-    border: 2px solid white;
+    border: 5px solid white;
     box-shadow: 0 0 10px white;
     overflow: hidden;
     
@@ -547,6 +550,7 @@ section p{
 .services{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    align-items: center;
     gap: 20px;
     width: 100%;
 }
@@ -892,6 +896,7 @@ section p{
     .logo{
         position: inherit;
         width: 120px;
+        margin-bottom: 20px;
     }
 
     .links{
@@ -908,7 +913,7 @@ section p{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 60vh;
+    height: 63vh;
     width: 100%;
     border: 1px solid white;
     }
@@ -941,7 +946,7 @@ section p{
     #main div:first-child h1{
     transform: translateY(-0.2em);
     animation: hovermove 1s ease-in-out alternate infinite;
-    font-size: 60px;
+    font-size: 50px;
 }
 
 #main .intro{
@@ -953,7 +958,7 @@ section p{
 }
 
 .intro h1{
-    font-size: 30px;
+    font-size: 25px;
     /* border-right: 5px solid white; */
     /* border: 1px solid white; */
 }
@@ -976,6 +981,7 @@ section p{
 
 .intro p {
     font-size: 18px;
+    text-align: center;
     margin: 0;
     font-weight: bold;
     color: rgb(214, 220, 253);
@@ -999,6 +1005,7 @@ section p{
 .projects{
     display: grid;
     width: 100%;
+    justify-items: center;
     /* justify-content: center; */
     /* border: 3px solid white; */
 }
@@ -1008,21 +1015,30 @@ section p{
     height: 15em;
 }
 
+.project h1{
+    /* text-align: center; */
+    font-size: 22px;
+}
+
 /* services */
 
 #services{
-    height: 160em;
+    height: 170em;
 }
 
 .services{
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center;*/
     align-items: center;
+    grid-template-columns: 1fr;
+    width: 90%;
+    gap: 10px;
+
 }
 
 .service{
-    width: 20em;
+    width: 100%;
     height: 35em;
     margin-bottom: 50px;
 }
@@ -1030,7 +1046,8 @@ section p{
 /* contacts */
 
 #contacts{
-    width: 25em;
+    /* width: 40%; */
+    height: 45em;
 }
 
 .contacts{
@@ -1038,14 +1055,15 @@ section p{
     flex-direction: column;
     /* align-items: center; */
     height: 40em;
-    width: 24em;
+    width: 90%;
+    /* border: 1px solid white; */
 }
 
 .contacts h1{
     font-family: Press start;
     color: rgb(0, 162, 255);
     text-shadow: 0 0 15px rgb(0, 174, 255) ;
-    font-size: 24px;
+    font-size: 23px;
     margin-bottom: 30px;
     animation: stuttering 1s ease-in-out alternate infinite;
 }
