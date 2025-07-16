@@ -299,7 +299,6 @@ main {
     grid-template-columns: 1fr;
     align-items: center;
     justify-content: center;
-    border: 1px solid white; 
     height: 80vh;
     overflow: scroll;
 }
@@ -313,7 +312,6 @@ section{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    border: 1px solid white;
     min-height: 90vh;
 }
 
@@ -362,10 +360,8 @@ section p{
 }
 
 #main .intro{
-    /* border: 1px solid white;  */
     justify-content: center;
     align-items: start;
-    /* background: rgb(0, 0, 0, 50%); */
     border-radius: 40px;
 }
 
@@ -440,7 +436,6 @@ section p{
     grid-template-columns: repeat(2, minmax(30em, 1fr));
     justify-content: center;
     gap: 40px;
-    border: 1px solid white;
 }
 
 .bg-project, .project{
@@ -540,7 +535,7 @@ section p{
     grid-template-columns: repeat(4, minmax(18em, 1fr));
     justify-content: center;
     gap: 20px;
-    border: 1px solid white;
+    /* border: 1px solid white; */
 }
 
 .service{
@@ -876,7 +871,6 @@ section p{
 @media (max-width: 1919px){
 
     .links{
-        border: 1px solid white;
         width: 100px;
 }
 
@@ -886,7 +880,6 @@ section p{
 }
 
 .links a {
-    border: 1px solid white;
     font-size: 20px;
     width: 5em;
     transform: translateX(-60px);
@@ -894,7 +887,6 @@ section p{
 
 .links a p{
     width: 60px;
-    border: 1px solid white;
 }
 
 .move-on{
@@ -1003,7 +995,6 @@ section p{
     .contact{
         font-size: 20px;
         width: 30em;
-        border: 1px solid white;
     }
 
     .contact p {
@@ -1011,7 +1002,6 @@ section p{
     }
 
     .contact a{
-        border: 1px solid white;
         width: 12em;
     }
 
@@ -1049,7 +1039,6 @@ section p{
         grid-template-columns: repeat(2, minmax(25em, 1fr));
         justify-content: center;
         gap: 40px;
-        border: 1px solid white;
     }
 
     .services{
@@ -1094,7 +1083,6 @@ section p{
     header {
         flex-direction: column-reverse;
         justify-content: space-between;
-        border: 1px solid white;
         height: 11em;
     }
 
@@ -1119,7 +1107,6 @@ section p{
 
     main {
         width: 100%;
-        border: 1px solid white;
         justify-items: center;
     }
 
@@ -1145,7 +1132,6 @@ section p{
     }
 
     .sections{
-        border: 1px solid red; 
         width: 60em;
         height: 300em;
         overflow: visible;
@@ -1263,7 +1249,6 @@ section p{
     }
 
     #main, #works, #services, #contacts{
-        border: 1px solid white;
         padding: 0;
         width: 60em;
     }
@@ -1322,7 +1307,6 @@ section p{
     nav{
         font-size: 15px;
         width: 300px;
-        border: 1px solid white;
     }
 
     .logo{
