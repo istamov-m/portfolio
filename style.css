@@ -42,6 +42,7 @@ a{
 }
 
 body{
+    position: inherit;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -51,6 +52,7 @@ body{
     background-size: 100% 100%;
     color: white;
     font-family: "Rubik";
+    z-index: -2;
 }
 
 #bg-video{
@@ -224,6 +226,71 @@ main {
 
 .emoji-hide{
     opacity: 0;
+}
+
+.languages{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 300px;
+    right: 120px;
+    border:none;
+    color: white;
+    width: 4em;
+    height: 4em;
+    background: rgb(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.languages p{
+    font-family: AudioWide;
+    font-size: 20px;
+}
+
+.languages::after, .languages::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: green;
+    z-index: -1;
+    padding: 7px;
+    background-image: conic-gradient(rgb(255, 0, 234), rgb(98, 0, 255), rgb(255, 0, 234));
+}
+
+.languages::before{
+    filter: blur(3px);
+}
+
+.choose-lang{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 5em;
+    height: 4em;
+    overflow: hidden;
+    transform: translateY(70px);
+    opacity: 0;
+    cursor: pointer;
+}
+
+.choose-lang-show{
+    transform: translateY(162px);
+    opacity: 1;
+    height: 25em;
+    display: flex;
+}
+
+.language{
+    height: 4em;
+    background: rgb(0, 0, 0, 0.5);
+    border: 2px solid white;
+    color: white;
+    font-family: AudioWide;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .sections{
@@ -840,6 +907,10 @@ section p{
     margin: 0 10px;
 }
 
+.languages{
+    right: 40px;
+}
+
 .services{
     justify-content: center;
 }
@@ -870,6 +941,10 @@ section p{
     .emoji{
         width: 100px;
         left: 50px;
+    }
+
+    .languages{
+        right: 40px;
     }
 
     .intro h1{
@@ -1046,6 +1121,27 @@ section p{
         width: 100%;
         border: 1px solid white;
         justify-items: center;
+    }
+
+    .languages{
+        left: 100px;
+    }
+
+    .choose-lang{
+        flex-direction: row;
+        width: 5em;
+        height: 5em;
+        transform: translateX(70px);
+    }
+
+    .choose-lang-show{
+        transform: translateX(162px);
+        width: 25em;
+    }
+
+    .language{
+        height: 4em;
+        width: 4em;
     }
 
     .sections{
@@ -1231,6 +1327,30 @@ section p{
 
     .logo{
         width: 120px;
+    }
+
+    .languages{
+        top: 200px;
+        left: 20px;
+        width: 3em;
+        height: 3em;
+    }
+
+    .choose-lang{
+        flex-direction: row;
+        width: 3em;
+        height: 4em;
+        transform: translateX(70px);
+    }
+
+    .choose-lang-show{
+        transform: translateX(72px);
+        width: 25em;
+    }
+
+    .language{
+        height: 3em;
+        width: 3em;
     }
 
     #main div:first-child h1{
