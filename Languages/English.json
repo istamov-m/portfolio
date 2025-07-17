@@ -1,0 +1,37 @@
+{
+  "main": "Main",
+  "works": "Works",
+  "services": "Services",
+  "contacts": "Contacts",
+  "hi": "Hi! :)",
+  "name": "Muboriz<br>Istamov",
+  "introTitle": "- Introduction -",
+  "introRole": "Front-End Developer",
+  "introDesc": "I build websites from scratch — clean, responsive, and made with <span class=\"love\">love</span>.Real code, thoughtful design, and a touch of personality.</p>",
+  "toWorks": "See my works :<span class=\"smile\">)</span>",
+
+  "someWorks": "Some of my works",
+  "projectOneTitle": "CSS-chat",
+  "projectTwoTitle": "Age calculator",
+  "projectThreeTitle": "Responsive landing-page",
+  "projectFourTitle": "Calculator on React",
+  "projectSubtitle": "See what I can ;)",
+  "visit": "Visit",
+
+  "myServices": "My services",
+
+  "serviceOneTitle": "Built from Scratch or <br> Based on Your Design <br> ____________-------",
+  "serviceOneDesc": "Whether you have a full design or just a wild idea in your head — I’ll turn it into a working website, coded by hand and tailored to your style.",
+  
+  "serviceTwoTitle": "Animations <br> ____________-------",
+  "serviceTwoDesc": "Hover effects, subtle transitions, scroll reveals — I add clean, modern motion to your site that brings the interface to life without overdoing it.",
+  
+  "serviceThreeTitle": "Fully Responsive website <br> ____________-------",
+  "serviceThreeDesc": "Your site will look and work great on phones, tablets, laptops, and everything in between.",
+  
+  "serviceFourTitle": "Publish online <br> ____________-------",
+  "serviceFourDesc": "Once your site is done, I’ll help you publish it using GitHub Pages. No confusing setup — just a clean link you can share with the world.",
+
+  "myContacts": "- My contacts -",
+  "clickMe": "Click me"
+}

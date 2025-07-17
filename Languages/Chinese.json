@@ -1,0 +1,37 @@
+{
+  "main": "首页",
+  "works": "作品展示",
+  "services": "服务项目",
+  "contacts": "联系方式",
+  "hi": "您好！ :)",
+  "name": "Istamov<br>Muboriz<br>(动力)",
+  "introTitle": "- 个人简介 -",
+  "introRole": "前端开发工程师",
+  "introDesc": "我专注于从零开始构建网站——简洁、响应式，且充满<span class=\"love\">热忱</span>。精心编写的代码，细致的设计，以及独特的个性呈现。",
+  "toWorks": "查看我的作品 :<span class=\"smile\">)</span>",
+
+  "someWorks": "部分精选作品",
+  "projectOneTitle": "CSS聊天界面",
+  "projectTwoTitle": "年龄计算器",
+  "projectThreeTitle": "响应式着陆页",
+  "projectFourTitle": "基于React的计算器",
+  "projectSubtitle": "欢迎了解我的能力 ;)",
+  "visit": "访问项目",
+
+  "myServices": "我的服务项目",
+
+  "serviceOneTitle": "从零开发 <br> 或基于您的设计实现 <br> ____________-------",
+  "serviceOneDesc": "无论您已有完整的设计方案，还是仅有一个初步构想——我都能将其转化为功能完善的网站，手工编写代码，完美匹配您的需求。",
+
+  "serviceTwoTitle": "动画效果设计 <br> ____________-------",
+  "serviceTwoDesc": "悬停效果、平滑过渡、滚动动画——我将为您的网站添加精致而现代的动效，使交互更加生动而不失优雅。",
+
+  "serviceThreeTitle": "全响应式网站开发 <br> ____________-------",
+  "serviceThreeDesc": "您的网站将在手机、平板、笔记本电脑等各种设备上完美呈现。我采用移动优先的开发策略，确保清晰度和可访问性。",
+
+  "serviceFourTitle": "网站部署上线 <br> ____________-------",
+  "serviceFourDesc": "网站完成后，我将协助您通过GitHub Pages发布。无需复杂配置，即可获得一个可分享至全球的简洁链接。",
+
+  "myContacts": "- 我的联系方式 -",
+  "clickMe": "点击此处"
+}

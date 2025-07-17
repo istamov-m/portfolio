@@ -24,10 +24,10 @@
     <header>
         <img class="logo" src="images/Logo.png" alt="logo">
         <nav>
-            <a href="#main">Main</a>
-            <a href="#works">Works</a>
-            <a href="#services">Services</a>
-            <a href="#contacts">Contacts</a>
+            <a id="to-main" href="#main">Main</a>
+            <a id="to-work" href="#works">Works</a>
+            <a id="to-services" href="#services">Services</a>
+            <a id="to-contacts" href="#contacts">Contacts</a>
         </nav>
 
         <div class="links">
@@ -42,15 +42,15 @@
                     <img src="images/instagram.png" alt="" class="show disable">
                     <p class="move-off">instagram</p>
                 </a>
-                <a href="" class="roll">
+                <a href="#" class="roll">
                     <img src="images/telegram.png" alt="" class="show disable">
                     <p class="move-off">telegram</p>
                 </a>
-                <a href="" class="roll">
+                <a href="#" class="roll">
                     <img src="images/discord.png" alt="" class="show disable">
                     <p class="move-off">discord</p>
                 </a>
-                <a href="" class="roll">
+                <a href="#" class="roll">
                     <img src="images/github.png" alt="" class="show disable">
                     <p class="move-off">Github</p>
                 </a>
@@ -64,63 +64,78 @@
         <img class="emoji emoji-hide" src="images/emoji-cute.png" alt="emoji">
         <img class="emoji" src="images/emoji-regular.png" alt="emoji">
 
+        <!-- <select name="" id="">
+            <option value="ru">Русский</option>
+            <option value="en">English</option>
+        </select> -->
+
+        <div class="languages">
+            <p id="lang-btn">En</p>
+            <div class="choose-lang">
+                <button class="language">Eng</button>
+                <button class="language">Rus</button>
+                <button class="language">Tjk</button>
+                <button class="language">中文</button>
+            </div>
+        </div>
+
         <div class="sections">         
             <section id="main">
                 <div>
-                    <p class="hi">HI! :)</p>
-                    <h1 class="hidden show-hi">Muboriz <br> Istamov</h1>
+                    <p id="hi" class="hi">HI! :)</p>
+                    <h1 id="name" class="hidden show-hi">Muboriz <br> Istamov</h1>
                 </div>
                 <div class="intro">
-                    <h5 class="hidden">- Introduction -</h5>
-                    <h1 class="hidden typetext">Front-End developer</h1>
+                    <h5 id="intro" class="hidden">- Introduction -</h5>
+                    <h1 id="role" class="hidden typetext">Front-End developer</h1>
                     <span></span>
-                    <p class="hidden">I build websites from scratch — clean, responsive, and made with <span class="love">love</span>.
+                    <p id="intro-desc" class="hidden">I build websites from scratch — clean, responsive, and made with <span class="love">love</span>.
                         Real code, thoughtful design, and a touch of personality.</p>
-                    <a class="hidden to-works" href="#works">See my works :<span class="smile">)</span></a>
+                    <a id="to-works" class="hidden to-works" href="#works">See my works :<span class="smile">)</span></a>
                 </div>
             </section>
             <section id="works">
-                <h1>Some of my works</h1>
+                <h1 id="some-works">Some of my works</h1>
                 <div class="projects">
                     <div class="bg-project hidden">
                         <div class="project">
-                            <h1>CSS-chat</h1>
-                            <h2>See what I can ;)</h2>
-                            <a href="https://istamov-m.github.io/phone/" target="_blank">Visit</a>
+                            <h1 id="css-chat">CSS-chat</h1>
+                            <h2 class="project-subtitle">See what I can ;)</h2>
+                            <a class="visit" href="https://istamov-m.github.io/phone/" target="_blank">Visit</a>
                         </div>
                     </div>
                     <div class="bg-project hidden">
                         <div class="project">
-                            <h1>Age calculator</h1>
-                            <h2>See what I can ;)</h2>
-                            <a href="https://istamov-m.github.io/calculator-of-life/" target="_blank">Visit</a>
+                            <h1 id="age-calc">Age calculator</h1>
+                            <h2 class="project-subtitle">See what I can ;)</h2>
+                            <a class="visit" href="https://istamov-m.github.io/calculator-of-life/" target="_blank">Visit</a>
                         </div>
                     </div>
                     <div class="bg-project hidden">
                         <div class="project">
-                            <h1>Responsive landing-page</h1>
-                            <h2>See what I can ;)</h2>
-                            <a href="https://istamov-m.github.io/fylo-mubaedition/" target="_blank">Visit</a>
+                            <h1 id="responsive">Responsive landing-page</h1>
+                            <h2 class="project-subtitle">See what I can ;)</h2>
+                            <a class="visit" href="https://istamov-m.github.io/fylo-mubaedition/" target="_blank">Visit</a>
                         </div>
                     </div>
                     <div class="bg-project hidden">
                         <div class="project">
-                            <h1>calculator made in React</h1>
-                            <h2>See what I can ;)</h2>
-                            <a href="https://istamov-m.github.io/calc-on-react/" target="_blank">Visit</a>
+                            <h1 id="calc-react">calculator made in React</h1>
+                            <h2 class="project-subtitle">See what I can ;)</h2>
+                            <a class="visit" href="https://istamov-m.github.io/calc-on-react/" target="_blank">Visit</a>
                         </div>
                     </div>
                 </div>
             </section>
 
             <section id="services">
-                <h1>My services</h1>
+                <h1 id="my-services">My services</h1>
                 <div class="services">
 
                     <div class="hidden service"> <!-- анимация строения -->
                         <div class="service-content">
-                            <h1>Built from Scratch or <br> Based on Your Design <br> ____________-------</h1>
-                            <p>Whether you have a full design or just a wild idea in your head — I’ll 
+                            <h1 id="build-title">Built from Scratch or <br> Based on Your Design <br> ____________-------</h1>
+                            <p id="build-desc">Whether you have a full design or just a wild idea in your head — I’ll 
                                 turn it into a working website, coded by hand and tailored to your style.</p>
                         </div>
                         <div class="bricks bricks-anim">
@@ -134,17 +149,17 @@
                     </div>
                     <div class="hidden service">
                         <div class="service-content">
-                            <h1>Animations <br> ____________-------</h1> <!-- демонстрация анимация -->
-                            <p>Hover effects, subtle transitions, scroll reveals — I add clean, 
+                            <h1 id="anim-title">Animations <br> ____________-------</h1> <!-- демонстрация анимация -->
+                            <p id="anim-desc">Hover effects, subtle transitions, scroll reveals — I add clean, 
                                 modern motion to your site that brings the interface to life without overdoing it.</p>
                         </div>
                         <div class="demonstration-anim"></div>
                     </div>
                     <div class="hidden service"> <!-- анимация где меняется размер -->
                         <div class="service-content">
-                            <h1>Fully Responsive website <br> ____________-------</h1>
-                            <p>Your site will look and work great on phones, tablets, laptops, 
-                                and everything in between. I build mobile-first to keep things sharp and accessible.</p>
+                            <h1 id="responsive-title">Fully Responsive website <br> ____________-------</h1>
+                            <p id="responsive-desc">Your site will look and work great on phones, tablets, laptops, 
+                                and everything in between.</p>
                         </div>
                         <div class="responsive">
                             <div class="responsive-anim"></div>
@@ -152,8 +167,8 @@
                     </div>
                     <div class="hidden service"> <!-- анимация сети -->
                         <div class="service-content">
-                            <h1>Publish online <br> ____________-------</h1>
-                            <p>Once your site is done, I’ll help you publish it using GitHub Pages. 
+                            <h1 id="publish-title">Publish online <br> ____________-------</h1>
+                            <p id="publish-desc">Once your site is done, I’ll help you publish it using GitHub Pages. 
                                 No confusing setup — just a clean link you can share with the world.</p>
                         </div>
                         <div class="online-anim">
@@ -164,7 +179,7 @@
             </section>
             <section id="contacts">
                 <div class="contacts">
-                    <h1 class="hidden">- My contacts -</h1>
+                    <h1 id="my-contacts" class="hidden">- My contacts -</h1>
                     <div>
                         <div class="hidden contact">
                             <div class="mail-adjust">

@@ -15,41 +15,102 @@ const observer = new IntersectionObserver((entries) => {
         
     });
 
-    // if(check == '1'){
-    //     point[0].classList.add('on-point')
-    //     point[1].classList.remove('on-point')
-    //     point[2].classList.remove('on-point')
-    // } 
-    // else if(check == '2'){
-    //     point[0].classList.remove('on-point')
-    //     point[1].classList.add('on-point')
-    //     point[2].classList.remove('on-point')
-    // }
-    // else if(check == '3'){
-    //     point[0].classList.remove('on-point')
-    //     point[1].classList.remove('on-point')
-    //     point[2].classList.add('on-point')
-    // }
+});
 
-    // if(check == '2') point[1].classList.add('on-point')
-    //     else point[1].classList.remove('on-point')
+const changeLanguage = document.querySelector('.languages');
 
-    // if(check == '3') point[2].classList.add('on-point')
-    //     else point[2].classList.remove('on-point')
-    
-    // for(let i = 0; i < entries.length; i++){
-    //         if(entries[i].isIntersecting){
-    //             point[i].classList.add('on-point');
-    //             entries[i].target.classList.add('show-main');
-    //         } 
-    //         else{
-    //             point[i].classList.remove('on-point');
-    //             entries[i].target.classList.remove('show-main');
-    //         }
-                
-    // }
-            //     alert(check)
-            // if(check == '1') point[0].classList.add('on-point')
+changeLanguage.addEventListener('click', () => {
+    document.querySelector('.choose-lang').classList.toggle('choose-lang-show')
+})
+
+const languages = [
+    {
+        name : "Muboriz <br> Istamov"
+    },
+
+    {
+        name : "Истамов <br> Мубориз"
+    },
+
+    {
+        name : "Истамов <br> Мубориз"
+    },
+
+    {
+        name : "Istamov <br> Muboriz <br> (动力)"
+    }
+]
+
+const language = document.querySelectorAll('.language');
+const languagePacks = [
+    fetch('./Languages/English.json').then(res => res.json()), 
+    fetch('./Languages/Russian.json').then(res => res.json()),
+    fetch('./Languages/Tajik.json').then(res => res.json()),
+    fetch('./Languages/Chinese.json').then(res => res.json())
+]
+
+language.forEach((element, i) => {
+    element.addEventListener('click', () => {
+        // language buttons content change
+
+        document.querySelector('#lang-btn').textContent = element.textContent
+
+        // ---------
+
+        languagePacks[i].then(data => {
+            document.querySelector("#to-main").textContent = data.main
+            document.querySelector("#to-work").textContent = data.works
+            document.querySelector("#to-services").textContent = data.services
+            document.querySelector("#to-contacts").textContent = data.contacts
+
+
+            // intro
+            document.querySelector("#hi").textContent = data.hi
+            document.querySelector("#name").innerHTML = data.name
+
+            document.querySelector('#intro').textContent = data.introTitle
+            document.querySelector('#role').textContent = data.introRole
+            document.querySelector('#intro-desc').innerHTML = data.introDesc
+            document.querySelector("#to-works").innerHTML = data.toWorks
+
+
+            // works
+            document.querySelector('#some-works').textContent = data.someWorks
+
+            document.querySelector('#css-chat').textContent = data.projectOneTitle
+            document.querySelector('#age-calc').textContent = data.projectTwoTitle
+            document.querySelector('#responsive').textContent = data.projectThreeTitle
+            document.querySelector('#calc-react').textContent = data.projectFourTitle
+            document.querySelectorAll('.project-subtitle').forEach(element => {
+                element.textContent = data.projectSubtitle
+            });        
+            document.querySelectorAll('.visit').forEach(element => {
+                element.textContent = data.visit
+            });
+
+
+            // services
+            document.querySelector('#my-services').textContent = data.myServices
+
+            document.querySelector('#build-title').innerHTML = data.serviceOneTitle
+            document.querySelector('#anim-title').innerHTML = data.serviceTwoTitle
+            document.querySelector('#responsive-title').innerHTML = data.serviceThreeTitle
+            document.querySelector('#publish-title').innerHTML = data.serviceFourTitle
+
+            document.querySelector('#build-desc').textContent = data.serviceOneDesc
+            document.querySelector('#anim-desc').textContent = data.serviceTwoDesc
+            document.querySelector('#responsive-desc').textContent = data.serviceThreeDesc
+            document.querySelector('#publish-desc').textContent = data.serviceFourDesc
+
+            // contacts
+
+            document.querySelector('#my-contacts').textContent = data.myContacts
+
+            document.querySelectorAll('.redirect').forEach(element => {
+                element.textContent = data.clickMe
+            });
+        })
+    })
 });
 
 
@@ -157,6 +218,7 @@ contacts.forEach((contact, i) => {
     })
 });
 
+// document.querySelector('shorten-text').textContent = "Front-End <br> Developer"
 
 
 // function hideOthers(activeIndex) {

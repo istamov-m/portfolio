@@ -10,6 +10,29 @@
 }
 
 @font-face {
+    font-family: 'VT323';
+    src: url('fonts/VT323/VT323-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Exo2';
+    src: url('fonts/Exo_2/Exo2-VariableFont_wght.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RussoOne';
+    src: url('fonts/Russo_One/RussoOne-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
     font-family: 'Press start';
     src: url('fonts/Press\ start/PressStart2P-Regular.ttf');
     font-weight: normal;
@@ -33,7 +56,7 @@
 /* Main */
 
 h1 {
-    font-family: AudioWide;
+    font-family: RussoOne;
 }
 
 a{
@@ -112,7 +135,7 @@ nav a {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    font-family: 'AudioWide';
+    font-family: 'RussoOne';
     text-shadow: 0 0 3px white;
     align-items: center;
     height: 2.5em;
@@ -164,7 +187,7 @@ nav a:hover{
 }
 
 .links a {
-    font-family: 'AudioWide';
+    font-family: 'RussoOne';
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -244,7 +267,7 @@ main {
 }
 
 .languages p{
-    font-family: AudioWide;
+    font-family: RussoOne;
     font-size: 20px;
 }
 
@@ -288,9 +311,13 @@ main {
     background: rgb(0, 0, 0, 0.5);
     border: 2px solid white;
     color: white;
-    font-family: AudioWide;
+    font-family: RussoOne;
     font-size: 20px;
     font-weight: bold;
+}
+
+.language:hover{
+    background: rgb(195, 0, 255);
 }
 
 .sections{
@@ -349,6 +376,7 @@ section p{
 }
 
 #main div:first-child h1{
+    text-align: center;
     transform: translateY(-1em);
     animation: hovermove 1.3s ease-in-out alternate infinite;
     text-shadow: 0 0 10px white;
@@ -366,9 +394,9 @@ section p{
 }
 
 .intro h1{
-    font-size: 50px;
+    font-size: 40px;
     border-right: 5px solid white;
-    width: 12em;
+    width: 13em;
     white-space: nowrap;
     overflow: hidden;
     animation: 
@@ -510,7 +538,7 @@ section p{
 }
 
 .project h2{
-    font-family: AudioWide;
+    font-family: RussoOne;
 }
 
 
@@ -587,7 +615,7 @@ section p{
 }
 
 .service p{
-    font-family: AudioWide;
+    font-family: RussoOne;
     width: 14em;
     font-size: 20px;
 }
