@@ -2,8 +2,6 @@ let roll = document.querySelectorAll('.roll');
 let img = document.querySelectorAll('.disable')
 let point = document.querySelectorAll('.point')
 
-let check = ''
-
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if(entry.isIntersecting){
@@ -17,29 +15,14 @@ const observer = new IntersectionObserver((entries) => {
 
 });
 
+const hiddenElement = document.querySelectorAll('.hidden');
+hiddenElement.forEach((el) => observer.observe(el));
+
 const changeLanguage = document.querySelector('.languages');
 
 changeLanguage.addEventListener('click', () => {
     document.querySelector('.choose-lang').classList.toggle('choose-lang-show')
 })
-
-const languages = [
-    {
-        name : "Muboriz <br> Istamov"
-    },
-
-    {
-        name : "Истамов <br> Мубориз"
-    },
-
-    {
-        name : "Истамов <br> Мубориз"
-    },
-
-    {
-        name : "Istamov <br> Muboriz <br> (动力)"
-    }
-]
 
 const language = document.querySelectorAll('.language');
 const languagePacks = [
@@ -105,6 +88,7 @@ language.forEach((element, i) => {
             // contacts
 
             document.querySelector('#my-contacts').textContent = data.myContacts
+            document.querySelector('#wechat').textContent = data.weChat
 
             document.querySelectorAll('.redirect').forEach(element => {
                 element.textContent = data.clickMe
@@ -112,10 +96,6 @@ language.forEach((element, i) => {
         })
     })
 });
-
-
-const hiddenElement = document.querySelectorAll('.hidden');
-hiddenElement.forEach((el) => observer.observe(el));
 
 const move = document.querySelectorAll('.move-off');
 
@@ -131,20 +111,6 @@ roll.forEach((element, i) => {
     })
 });
 
-// for(let i = 0; i < roll.length; i++){
-//     roll[i].addEventListener('mouseover', () => {
-//         img[i].classList.remove('disable')
-//     })
-
-//     roll[i].addEventListener('mouseout', () => {
-//         img[i].classList.add('disable')
-//     })
-// }
-
-
-move.forEach(element => {
-    
-});
 
 let emoji = document.querySelectorAll('.emoji');
 
@@ -193,15 +159,15 @@ document.querySelector(".love").addEventListener('mouseout', () => {
 const works = document.querySelectorAll('.bg-project');
 const projects = document.querySelectorAll('.project');
 
-for(let i = 0; i < works.length; i++){
-    works[i].addEventListener('mouseover', () =>{
+works.forEach((element, i) => {
+    element.addEventListener('mouseover', () =>{
         projects[i].classList.add('show-work')
     })
 
     works[i].addEventListener('mouseout', () =>{
         projects[i].classList.remove('show-work')
     })
-}
+});
 
 const contacts = document.querySelectorAll('.redirect');
 const goTo = document.querySelectorAll('.go');

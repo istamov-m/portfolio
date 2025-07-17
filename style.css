@@ -770,8 +770,9 @@ section p{
     height: 40em;
     width: 65em;
     border: 6px solid white;
-    border-radius: 20px;
+    border-radius: 10px;
     background: rgb(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px white;
 }
 
 .contacts h1{
