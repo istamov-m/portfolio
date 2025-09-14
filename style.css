@@ -475,6 +475,9 @@ section p{
     border: 5px solid white;
     box-shadow: 0 0 10px white;
     overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     
 }
 
@@ -482,7 +485,7 @@ section p{
     box-shadow: 0 0 20px rgb(255, 0, 255);
 }
 
-.bg-project:first-child{
+/* .bg-project:first-child{
     background-image: url('images/chat-css.png');
     background-repeat: no-repeat;
 }
@@ -500,7 +503,7 @@ section p{
 .bg-project:nth-of-type(4){
     background-image: url('images/calc-on-react.png');
     background-repeat: no-repeat;
-}
+} */
 
 .project{
     display: flex;
